@@ -1,0 +1,414 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1198,5472" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uuam="clr-namespace:UiPath.UIAutomationNext.Activities.Models;assembly=UiPath.UIAutomationNext.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.Activities.Contracts</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Activities.Contracts</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap2010:Annotation.AnnotationText="Testing whether the two workflows can be combined into one." DisplayName="AllInOne" sap:VirtualizedContainerService.HintSize="1208,5407.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="dt_Kenya" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: New Tab" sap:VirtualizedContainerService.HintSize="1146,5288.666666666667" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="6dcb9550-edef-483e-ad0f-718a93438b71" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1112,5047.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="Password" />
+              <Variable x:TypeArguments="x:String" Default="manassehkinyua20@gmail.com" Name="Email" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="1050,116" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" Url="https://ke.linkedin.com/" Version="V3" />
+            <uix:NCheckState DisplayName="Check App State 'Welcome to'" sap:VirtualizedContainerService.HintSize="1050,1266" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="6dcb9550-edef-483e-ad0f-718a93438b71" Version="V3">
+              <uix:NCheckState.IfExists>
+                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,1014" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into Email" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,252" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="DebuggerApi" ScopeIdentifier="6dcb9550-edef-483e-ad0f-718a93438b71" Text="[Email]" Version="V3">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable BrowserURL="https://www.linkedin.com/home" CVScreenId="52334799-24f0-4b02-b540-35a7bd55576e" CvElementArea="194, 698, 557, 79" CvType="InputBox" DesignTimeRectangle="197, 701, 551, 73" DesignTimeScaleFactor="1.3499999046325684" ElementType="InputBox" FullSelectorArgument="&lt;webctrl aaname='                               ' parentid='main-content' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='                               ' parentid='main-content' tag='DIV' type='' class='text-input flex' /&gt;" Guid="d86ef9fe-ede2-4da0-80c1-490cc1c67425" InformativeScreenshot="8c55eb51900416084e8ad0e061a775f2.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='LinkedIn: Log In or Sign Up' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                            <uix:Target CVScreenId="52334799-24f0-4b02-b540-35a7bd55576e" CvTextArea="195, 666, 132, 22" CvTextArgument="Email or phone" CvType="Text" DesignTimeRectangle="197, 662, 551, 28" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='input-label mb-1' aaname='           Email or phone         ' check:innerText='Email or phone' /&gt;" Guid="020864b1-2839-45af-a3d1-fd9e4546dd4b" SearchSteps="FuzzySelector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NTypeInto.Target>
+                  </uix:NTypeInto>
+                  <ui:GetPassword DisplayName="Get Password" sap:VirtualizedContainerService.HintSize="388,57.333333333333336" sap2010:WorkflowViewState.IdRef="GetPassword_1" ProtectedPassword="AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAOiemhchz50SG9R1LpczWwAAAAAACAAAAAAAQZgAAAAEAACAAAABcscrlqbFRddmaknhzJ+n7kSXGfbgztQgIgBFLzKXKewAAAAAOgAAAAAIAACAAAACPKPRXe6rQ+ERBXXqiI5JakdhuishebwMq7ccB4SyvyRAAAAB+M3gJvaXSvNubBGjntKnCQAAAAEPeA3nGOhgxkeFoV2CCadqzljbL/ThRdRmbX9bswS8pUT8TDsrPIun9+zlAoxTOEwbfZEPYz4zvbGfcgUoM0GU=" Result="[Password]" />
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into Password" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,252" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="DebuggerApi" ScopeIdentifier="6dcb9550-edef-483e-ad0f-718a93438b71" Text="[Password]" Version="V3">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable BrowserURL="https://www.linkedin.com/home" CVScreenId="52334799-24f0-4b02-b540-35a7bd55576e" CvElementArea="194, 842, 556, 79" CvType="InputBox" DesignTimeRectangle="197, 845, 551, 73" DesignTimeScaleFactor="1.3499999046325684" ElementType="InputBoxPassword" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;main&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='2' parentid='main-content' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='text-input flex' parentid='main-content' tag='DIV' aaname='                                                       ' /&gt;" Guid="953e0a38-1f74-43c7-a005-1b6948eeb826" InformativeScreenshot="c7154e5c6e8734090b2cec3f88d1eba3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='LinkedIn: Log In or Sign Up' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                            <uix:Target CVScreenId="52334799-24f0-4b02-b540-35a7bd55576e" CvTextArea="195, 810, 82, 18" CvTextArgument="Password" CvType="Text" DesignTimeRectangle="197, 806, 551, 28" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='           Password         ' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='           Password         ' tag='LABEL' type='' class='input-label mb-1' check:innerText='Password' /&gt;" Guid="9854535a-4426-46a8-b576-9e1d888fdaae" SearchSteps="FuzzySelector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NTypeInto.Target>
+                  </uix:NTypeInto>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Sign in'" sap:VirtualizedContainerService.HintSize="388,190.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6dcb9550-edef-483e-ad0f-718a93438b71" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="https://ke.linkedin.com/" CvElementArea="107, 960, 619, 79" CvTextArea="378, 988, 79, 30" CvTextArgument="Sign in" CvType="Button" DesignTimeRectangle="113, 964, 612, 72" DesignTimeScaleFactor="1.5" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='btn-md btn-primary flex-shrink-0 cursor-pointer&amp;#xA;            sign-in-form__submit-btn--full-width' aaname='           Sign in         ' check:innerText='Sign in' /&gt;" Guid="f6749554-53b5-4399-ae0e-753e9deb9964" InformativeScreenshot="13e0f49f2749fa93f368f62fc7883484.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='LinkedIn Kenya: Log In or Sign Up' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,171.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Successfully Logged In.&quot;]" />
+                </Sequence>
+              </uix:NCheckState.IfExists>
+              <uix:NCheckState.IfNotExists>
+                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,262" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,171.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Already Logged In.&quot;]" />
+                </Sequence>
+              </uix:NCheckState.IfNotExists>
+              <uix:NCheckState.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.linkedin.com/home" DesignTimeRectangle="197, 432, 781, 181" DesignTimeScaleFactor="1.3499999046325684" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='H1' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' class='main-heading text-color-text-accent-2 babybear:pb-[24px]' aaname='           Welcome to your professional community         ' check:innerText='Welcome to your professional community' /&gt;" Guid="b95e116f-1805-4c61-b24d-ffdbee721a13" InformativeScreenshot="0b804c331d7fc7b327f06d9009755526.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='LinkedIn: Log In or Sign Up' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="749de31e-34d5-4ee7-a202-bf4bd05f6ffa" CvTextArea="193, 306, 138, 30" CvTextArgument="Linked in" CvType="Text" DesignTimeRectangle="197, 304, 138, 34" ElementType="Icon" FullSelectorArgument="&lt;webctrl class='lazy-loaded' tag='svg' /&gt;" FuzzySelectorArgument="&lt;webctrl class='lazy-loaded' tag='svg' type='' aaname='       ' /&gt;" Guid="39ffe987-f404-4990-8dd4-e7596abf8f0c" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NCheckState.Target>
+            </uix:NCheckState>
+            <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="1050,823.3333333333334" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+              <ueab:ExcelProcessScopeX.Body>
+                <ActivityAction x:TypeArguments="ui:IExcelProcess">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="602,704" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" sap2010:Annotation.AnnotationText="Opens the Customer List.xlsx and saves the value of a sheet to a Data Table.&#xA;" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="540,619.3333333333334" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" WorkbookPath="CUSTOMERS LIST.xlsx">
+                      <ueab:ExcelApplicationCard.Body>
+                        <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="506,278.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ueab:ReadRangeX DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="444,194" sap2010:WorkflowViewState.IdRef="ReadRangeX_1" Range="[Excel.Sheet(&quot;Kenya&quot;)]" SaveTo="[dt_Kenya]" />
+                          </Sequence>
+                        </ActivityAction>
+                      </ueab:ExcelApplicationCard.Body>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ueab:ExcelApplicationCard>
+                  </Sequence>
+                </ActivityAction>
+              </ueab:ExcelProcessScopeX.Body>
+            </ueab:ExcelProcessScopeX>
+            <ui:DeleteFileX DisplayName="Delete File" sap:VirtualizedContainerService.HintSize="1050,113.33333333333333" sap2010:WorkflowViewState.IdRef="DeleteFileX_1" Path="SentConnections.xlsx" />
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_Kenya]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="1050,2641.3333333333335" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+              <ui:ForEachRow.Body>
+                <ActivityAction x:TypeArguments="sd:DataRow">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1016,2449.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="sd:DataTable" Name="dt_SentConnections" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into Search" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="954,252" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InteractionMode="DebuggerApi" ScopeIdentifier="6dcb9550-edef-483e-ad0f-718a93438b71" Text="[CurrentRow(&quot;Bank Name&quot;).ToString() +&quot; &quot;+ &quot;Head&quot;]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.linkedin.com/feed/?trk=homepage-basic_sign-in-submit" CVScreenId="0ff2ec2e-2b88-4f56-a5d5-4a16fc2e7c25" CvTextArea="316, 297, 58, 18" CvTextArgument="Search" CvType="Text" DesignTimeRectangle="265, 282, 378, 46" DesignTimeScaleFactor="1.3499999046325684" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='search-global-typeahead__input' placeholder='Search' aaname='' /&gt;" Guid="9cbf3300-2b9b-4499-a019-d8bfa5080288" InformativeScreenshot="102ca31a02abe2d29e72ec07f97afc99.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='(14) Feed | LinkedIn' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="954,252" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_2" InteractionMode="SameAsCard" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V3">
+                      <uix:NKeyboardShortcuts.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="Element 'Skip to'" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Target>
+                            <uix:TargetAnchorable BrowserURL="https://www.linkedin.com/search/results/people/?keywords=NCBA%20Bank%20Head&amp;origin=SWITCH_SEARCH_VERTICAL&amp;sid=%3BE~" DesignTimeRectangle="11, 270, 1895, 65" DesignTimeScaleFactor="1.3499999046325684" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div' idx='3' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='global-nav__a11y-menu&amp;#xA;        ' tag='DIV' aaname='            ' check:innerText='Skip to search&amp;#xD;&amp;#xA;Skip to main content&amp;#xD;&amp;#xA;Keyboard shortcuts&amp;#xD;&amp;#xA;Close jump menu' /&gt;" Guid="7a003de5-d317-42e2-b389-0c05d390ff59" InformativeScreenshot="09b48dd2fba5fb532e53f53e68fb3d30.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='(14) &amp;quot;NCBA Bank Head&amp;quot; | Search | LinkedIn' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive" />
+                          </uix:VerifyExecutionOptions.Target>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NKeyboardShortcuts.VerifyOptions>
+                    </uix:NKeyboardShortcuts>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'People'" sap:VirtualizedContainerService.HintSize="954,190.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6dcb9550-edef-483e-ad0f-718a93438b71" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.linkedin.com/search/results/all/?keywords=NCBA%20Bank%20Head&amp;origin=HISTORY&amp;sid=%3BE~" CVScreenId="60040fbf-1179-452e-a0d1-4ef7aa738076" CvElementArea="192, 354, 105, 49" CvTextArea="213, 367, 67, 25" CvTextArgument="People" CvType="Button" DesignTimeRectangle="197, 358, 99, 43" DesignTimeScaleFactor="1.3499999046325684" ElementType="Button" FullSelectorArgument="&lt;webctrl parentid='search-reusables__filters-bar' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='search-reusables__filters-bar' tag='BUTTON' type='button' class='artdeco-pill artdeco-pill--slate artdeco-pill--choice artdeco-pill--2 search-reusables__filter-pill-button&amp;#xA;       search-reusables__filter-pill-button' aaname='            People        ' check:innerText='People' /&gt;" Guid="8b18ab3b-bb74-46ec-b4f2-944d90cb5875" InformativeScreenshot="48dcecdb6c4a68159af75f49d3d5e718.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='(14) &amp;quot;NCBA Bank Head&amp;quot; | Search | LinkedIn' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NCheckState DisplayName="Check App State 'chrome.exe (10)'" sap:VirtualizedContainerService.HintSize="954,526.6666666666666" sap2010:WorkflowViewState.IdRef="NCheckState_2" Mode="WaitDisappear" ScopeIdentifier="6dcb9550-edef-483e-ad0f-718a93438b71" Version="V3">
+                      <uix:NCheckState.IfExists>
+                        <Sequence DisplayName="Target disappears" sap:VirtualizedContainerService.HintSize="450,141.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:Continue sap:VirtualizedContainerService.HintSize="388,50.666666666666664" sap2010:WorkflowViewState.IdRef="Continue_1" />
+                        </Sequence>
+                      </uix:NCheckState.IfExists>
+                      <uix:NCheckState.IfNotExists>
+                        <Sequence DisplayName="Target does not disappear" sap:VirtualizedContainerService.HintSize="450,274.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'People'" sap:VirtualizedContainerService.HintSize="388,184" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6dcb9550-edef-483e-ad0f-718a93438b71" Version="V3">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable BrowserURL="https://www.linkedin.com/search/results/people/?keywords=NCBA%20Bank%20Head&amp;origin=SWITCH_SEARCH_VERTICAL&amp;sid=%3BE~" CVScreenId="49c5c57b-96dd-47e4-920f-1e9f6ca56a75" CvTextArea="211, 367, 70, 27" CvTextArgument="People" CvType="Text" DesignTimeRectangle="197, 358, 126, 43" DesignTimeScaleFactor="1.3499999046325684" ElementType="Button" FullSelectorArgument="&lt;webctrl id='ember640' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ember640' tag='BUTTON' type='button' class='artdeco-dropdown__trigger artdeco-dropdown__trigger--placement-bottom ember-view artdeco-pill artdeco-pill--slate artdeco-pill--choice artdeco-pill--2 search-reusables__filter-pill-button artdeco-pill--selected cursor-pointer' aaname='         People                             ' check:innerText='People' /&gt;" Guid="a0e8b0e6-1c26-4694-b1c3-9bcd30449fc8" InformativeScreenshot="af1e9cdd5c197f315059b0fb0bca5828.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='(14) &amp;quot;NCBA Bank Head&amp;quot; | Search | LinkedIn' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                            </uix:NClick.Target>
+                          </uix:NClick>
+                        </Sequence>
+                      </uix:NCheckState.IfNotExists>
+                      <uix:NCheckState.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.linkedin.com/search/results/people/?keywords=NCBA%20Bank%20Head&amp;origin=SWITCH_SEARCH_VERTICAL&amp;sid=%3BE~" DesignTimeRectangle="196, 410, 228, 536" DesignTimeScaleFactor="1.5" Guid="52c110f2-a803-47dc-938a-cd39f6b2ae0b" ImageBase64="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" InformativeScreenshot="02cc5b029c497fbaf6a78fc685c441a6.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='(14) &amp;quot;NCBA Bank Head&amp;quot; | Search | LinkedIn' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V3" Visibility="Interactive" />
+                      </uix:NCheckState.Target>
+                    </uix:NCheckState>
+                    <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[dt_SentConnections]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Name'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='Role'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column2' Name='Location'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column3' Name='Status'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column1' attr='fulltext'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column2' attr='fulltext'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column3' attr='fulltext'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='button' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="954,191.33333333333334" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="Page" MaximumResults="2" ScopeIdentifier="6dcb9550-edef-483e-ad0f-718a93438b71" Version="V3">
+                      <uix:NExtractData.NextLink>
+                        <uix:TargetAnchorable BrowserURL="https://www.linkedin.com/search/results/people/?keywords=Bank%20of%20Africa%20Head&amp;origin=SWITCH_SEARCH_VERTICAL&amp;sid=hrQ" CvTextArea="1194, 867, 42, 16" CvTextArgument="Next" CvType="Text" DesignTimeRectangle="1196, 864, 41, 27" DesignTimeScaleFactor="1.3499999046325684" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='ember112' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='ember112' tag='SPAN' type='' class='artdeco-button__text' aaname='     Next ' check:innerText='Next' /&gt;" Guid="db685f0e-2020-4f07-ad38-8929d857c6d4" ScopeSelectorArgument="&lt;html app='chrome.exe' title='(2) &amp;quot;Bank of Africa Head&amp;quot; | Search | LinkedIn' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CvElementArea="1240, 861, 25, 31" CvTextArea="1194, 867, 42, 16" CvTextArgument="Next" CvType="ArrowButton" DesignTimeRectangle="1185, 856, 87, 43" ElementType="Button" FullSelectorArgument="&lt;webctrl id='ember112' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ember112' tag='BUTTON' type='button' class='artdeco-button artdeco-button--muted artdeco-button--icon-right artdeco-button--1 artdeco-button--tertiary ember-view artdeco-pagination__button artdeco-pagination__button--next' aaname='                           Next ' check:innerText='Next' /&gt;" Guid="db6303b8-d70c-4a82-8c07-61ca02b235ec" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NExtractData.NextLink>
+                      <uix:NExtractData.Target>
+                        <uix:TargetAnchorable DesignTimeRectangle="197, 597, 1086, 1796" DesignTimeScaleFactor="1.3499999046325684" ElementType="List" FullSelectorArgument="&lt;webctrl aria-role='list' tag='UL' /&gt;" Guid="713476ed-03bc-49f5-aa13-50005e846e56" InformativeScreenshot="7a765824f989db7d8242904cde9a2633.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='(2) &amp;quot;Bank of Africa Head&amp;quot; | Search | LinkedIn' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
+                      </uix:NExtractData.Target>
+                    </uix:NExtractData>
+                    <uix:NForEachUiElement DisplayName="For Each UI Element" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='CurrentElement'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='button' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="954,782.6666666666666" sap2010:WorkflowViewState.IdRef="NForEachUiElement_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="6dcb9550-edef-483e-ad0f-718a93438b71" Version="V3">
+                      <uix:NForEachUiElement.Body>
+                        <ActivityAction x:TypeArguments="x:Int32">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,443.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                            <Sequence.Variables>
+                              <Variable x:TypeArguments="x:String" Name="Role" />
+                              <Variable x:TypeArguments="sd:DataTable" Name="dt_SentConnections" />
+                            </Sequence.Variables>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Connect'" sap:VirtualizedContainerService.HintSize="354,172" sap2010:WorkflowViewState.IdRef="NClick_4" InUiElement="[CurrentElement]" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6dcb9550-edef-483e-ad0f-718a93438b71" Version="V3">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="https://www.linkedin.com/search/results/people/?keywords=Absa%20Bank%20Kenya%20Top%20Management&amp;origin=SWITCH_SEARCH_VERTICAL&amp;sid=xBD" CvElementArea="1134, 959, 145, 55" CvTextArea="1161, 976, 91, 21" CvTextArgument="Connect" CvType="Button" DesignTimeRectangle="1117, 862, 131, 50" DesignTimeScaleFactor="1.5" ElementType="Button" FullSelectorArgument="&lt;webctrl id='ember759' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ember759' tag='BUTTON' type='button' class='artdeco-button artdeco-button--2 artdeco-button--secondary ember-view' aaname='      Connect ' check:innerText='Connect' /&gt;" Guid="70f95393-7ba1-42e4-a7e7-bb3672168531" ImageBase64="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" InformativeScreenshot="a05c4b382efcf3a1f791ed6ab9359558.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='&amp;quot;Absa Bank Kenya Top Management&amp;quot; | Search | LinkedIn' /&gt;" SearchSteps="Selector, Image, CV" Version="V3" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target CvElementArea="1134, 959, 145, 55" CvTextArea="1161, 976, 91, 21" CvTextArgument="Connect" CvType="Button" DesignTimeRectangle="1142, 872, 81, 27" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='ember759' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='ember759' tag='SPAN' type='' class='artdeco-button__text' aaname='     Connect ' check:innerText='Connect' /&gt;" Guid="f51c8f04-6a98-4d9f-bcab-f85c7820f8b0" SearchSteps="FuzzySelector, CV" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NClick.Target>
+                            </uix:NClick>
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Send'" sap:VirtualizedContainerService.HintSize="354,184" sap2010:WorkflowViewState.IdRef="NClick_5" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6dcb9550-edef-483e-ad0f-718a93438b71" Version="V3">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="https://www.linkedin.com/search/results/people/?keywords=NCBA%20Bank%20Head&amp;origin=SWITCH_SEARCH_VERTICAL&amp;sid=KPo" CvElementArea="1215, 518, 97, 49" CvTextArea="1237, 531, 52, 21" CvTextArgument="Send" CvType="Button" DesignTimeRectangle="1219, 520, 92, 44" DesignTimeScaleFactor="1.3499999046325684" ElementType="Button" FullSelectorArgument="&lt;webctrl id='ember949' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ember949' tag='BUTTON' type='' class='artdeco-button artdeco-button--2 artdeco-button--primary ember-view ml1' aaname='      Send ' check:innerText='Send' /&gt;" Guid="b46a27ac-c245-4f50-a1e0-a11630ae6b11" InformativeScreenshot="924aeb5a715efec3bfda0d9981cabe96.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='(14) Search | LinkedIn' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target CvElementArea="1215, 518, 97, 49" CvTextArea="1237, 531, 52, 21" CvTextArgument="Send" CvType="Button" DesignTimeRectangle="1241, 528, 49, 27" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='ember949' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='ember949' tag='SPAN' type='' class='artdeco-button__text' aaname='     Send ' check:innerText='Send' /&gt;" Guid="113f25d7-75ab-450e-a88e-3946bc7d06d9" SearchSteps="FuzzySelector, CV" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NClick.Target>
+                            </uix:NClick>
+                          </Sequence>
+                        </ActivityAction>
+                      </uix:NForEachUiElement.Body>
+                      <uix:NForEachUiElement.Filter>
+                        <uuam:FilterArgument LogicalOperator="And">
+                          <uuam:FilterArgument.Filters>
+                            <scg:List x:TypeArguments="uuam:FilterEntryArgument" Capacity="1">
+                              <uuam:FilterEntryArgument Criterion="Column0" Operator="Contains" Value="Connect" />
+                            </scg:List>
+                          </uuam:FilterArgument.Filters>
+                        </uuam:FilterArgument>
+                      </uix:NForEachUiElement.Filter>
+                      <uix:NForEachUiElement.NextLink>
+                        <uix:TargetAnchorable BrowserURL="https://www.linkedin.com/search/results/people/?keywords=Absa%20Bank%20Kenya%20Head&amp;origin=SWITCH_SEARCH_VERTICAL&amp;sid=%2Cb7" CvElementArea="1240, 627, 26, 32" CvTextArea="1194, 634, 43, 18" CvTextArgument="Next" CvType="ArrowButton" DesignTimeRectangle="1185, 623, 87, 43" DesignTimeScaleFactor="1.3499999046325684" ElementType="Button" FullSelectorArgument="&lt;webctrl id='ember730' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ember730' tag='BUTTON' type='button' class='artdeco-pagination__button artdeco-pagination__button--next artdeco-button artdeco-button--muted artdeco-button--icon-right artdeco-button--1 artdeco-button--tertiary ember-view' aaname='                           Next ' check:innerText='Next' /&gt;" Guid="b3febec7-a42a-491f-9d0f-e1cde444b17f" ScopeSelectorArgument="&lt;html app='chrome.exe' title='(5) &amp;quot;Absa Bank Kenya Head&amp;quot; | Search | LinkedIn' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CvTextArea="1194, 634, 43, 18" CvTextArgument="Next" CvType="Text" DesignTimeRectangle="1196, 631, 41, 27" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='ember730' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='ember730' tag='SPAN' type='' class='artdeco-button__text' aaname='     Next ' check:innerText='Next' /&gt;" Guid="b5f2a42d-cf6e-44f8-8887-916d72e2a2ec" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NForEachUiElement.NextLink>
+                      <uix:NForEachUiElement.Target>
+                        <uix:TargetAnchorable DesignTimeRectangle="197, 502, 1086, 1508" DesignTimeScaleFactor="1.3499999046325684" ElementType="List" FullSelectorArgument="&lt;webctrl aria-role='list' tag='UL' /&gt;" Guid="dbcae683-33dc-4391-a142-42c248313b9d" InformativeScreenshot="c38a8260bb775b54081a9f6bdbebc978.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='(5) &amp;quot;Absa Bank Kenya Head&amp;quot; | Search | LinkedIn' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
+                      </uix:NForEachUiElement.Target>
+                      <uix:NForEachUiElement.Variables>
+                        <Variable x:TypeArguments="ui:UiElement" Name="CurrentElement" />
+                        <Variable x:TypeArguments="x:String" Name="CurrentElement_Label" />
+                        <Variable x:TypeArguments="x:String" Name="CurrentLabel_2" />
+                        <Variable x:TypeArguments="x:String" Name="CurrentLabel_3" />
+                      </uix:NForEachUiElement.Variables>
+                      <uix:NForEachUiElement.VariablesMetadata>
+                        <scg:List x:TypeArguments="uuam:VariableMetadata" x:Key="Column0" Capacity="4">
+                          <uuam:VariableMetadata Name="CurrentElement" Type="ui:UiElement" />
+                          <uuam:VariableMetadata Name="CurrentElement_Label" Type="x:String" />
+                        </scg:List>
+                        <scg:List x:TypeArguments="uuam:VariableMetadata" x:Key="Column2" Capacity="4">
+                          <uuam:VariableMetadata Name="CurrentLabel_2" Type="x:String" />
+                        </scg:List>
+                        <scg:List x:TypeArguments="uuam:VariableMetadata" x:Key="Column3" Capacity="4">
+                          <uuam:VariableMetadata Name="CurrentLabel_3" Type="x:String" />
+                        </scg:List>
+                      </uix:NForEachUiElement.VariablesMetadata>
+                    </uix:NForEachUiElement>
+                    <ui:WriteRange StartingCell="{x:Null}" AddHeaders="False" sap2010:Annotation.AnnotationText="Writes DataTable to excel." DataTable="[dt_SentConnections]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="954,169.33333333333334" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Audience" WorkbookPath="SentConnections.xlsx">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:WriteRange>
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEachRow.Body>
+            </ui:ForEachRow>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-11, -11, 1942, 1102" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="f3bd5bbcda931b41d7f17a81c0ecaaba.png" Selector="&lt;html app='chrome.exe' title='New Tab' /&gt;" Title="New Tab" Url="chrome://newtab/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
