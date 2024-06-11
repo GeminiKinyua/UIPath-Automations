@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1198,6006.666666666667" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uuam="clr-namespace:UiPath.UIAutomationNext.Activities.Models;assembly=UiPath.UIAutomationNext.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1198,5468" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uuam="clr-namespace:UiPath.UIAutomationNext.Activities.Models;assembly=UiPath.UIAutomationNext.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -101,9 +101,10 @@
       <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
       <AssemblyReference>UiPath.Platform</AssemblyReference>
       <AssemblyReference>UiPath.Activities.Contracts</AssemblyReference>
+      <AssemblyReference>GlobalVariablesT1PNoYwrqg</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Testing whether the two workflows can be combined into one." DisplayName="AllInOne" sap:VirtualizedContainerService.HintSize="1208,5942" sap2010:WorkflowViewState.IdRef="Sequence_2">
+  <Sequence sap2010:Annotation.AnnotationText="Testing whether the two workflows can be combined into one." DisplayName="AllInOne" sap:VirtualizedContainerService.HintSize="1208,5403.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_2">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dt_Kenya" />
     </Sequence.Variables>
@@ -113,13 +114,13 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: New Tab" sap:VirtualizedContainerService.HintSize="1146,5823.333333333333" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="6dcb9550-edef-483e-ad0f-718a93438b71" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: New Tab" sap:VirtualizedContainerService.HintSize="1146,5284.666666666667" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="6dcb9550-edef-483e-ad0f-718a93438b71" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1112,5581.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1112,5042.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_3">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="Password" />
               <Variable x:TypeArguments="x:String" Default="manassehkinyua20@gmail.com" Name="Email" />
@@ -189,25 +190,25 @@
                 </uix:TargetAnchorable>
               </uix:NCheckState.Target>
             </uix:NCheckState>
-            <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="1050,841.3333333333334" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+            <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="1050,834.6666666666666" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
               <ueab:ExcelProcessScopeX.Body>
                 <ActivityAction x:TypeArguments="ui:IExcelProcess">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="602,722" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="602,715.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_11">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" sap2010:Annotation.AnnotationText="Opens the Customer List.xlsx and saves the value of a sheet to a Data Table.&#xA;" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="540,634" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" WorkbookPath="CUSTOMERS LIST.xlsx">
+                    <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" sap2010:Annotation.AnnotationText="Opens the Customer List.xlsx and saves the value of a sheet to a Data Table.&#xA;" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="540,630.6666666666666" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" WorkbookPath="CUSTOMERS LIST.xlsx">
                       <ueab:ExcelApplicationCard.Body>
                         <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
                           <ActivityAction.Argument>
                             <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
                           </ActivityAction.Argument>
-                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="506,285.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="506,282" sap2010:WorkflowViewState.IdRef="Sequence_8">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -228,13 +229,13 @@
               </ueab:ExcelProcessScopeX.Body>
             </ueab:ExcelProcessScopeX>
             <ui:DeleteFileX DisplayName="Delete File" sap:VirtualizedContainerService.HintSize="1050,114" sap2010:WorkflowViewState.IdRef="DeleteFileX_1" Path="SentConnections.xlsx" />
-            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_Kenya]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="1050,3144" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_Kenya]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="1050,2615.3333333333335" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
               <ui:ForEachRow.Body>
                 <ActivityAction x:TypeArguments="sd:DataRow">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1016,2950.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1016,2422" sap2010:WorkflowViewState.IdRef="Sequence_4">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="sd:DataTable" Name="dt_SentConnections" />
                     </Sequence.Variables>
@@ -311,13 +312,13 @@
                         <uix:TargetAnchorable DesignTimeRectangle="197, 597, 1086, 1796" DesignTimeScaleFactor="1.3499999046325684" ElementType="List" FullSelectorArgument="&lt;webctrl aria-role='list' tag='UL' /&gt;" Guid="713476ed-03bc-49f5-aa13-50005e846e56" InformativeScreenshot="7a765824f989db7d8242904cde9a2633.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='(2) &amp;quot;Bank of Africa Head&amp;quot; | Search | LinkedIn' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
                       </uix:NExtractData.Target>
                     </uix:NExtractData>
-                    <uix:NForEachUiElement DisplayName="For Each UI Element" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='CurrentElement'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='button' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="954,1440.6666666666667" sap2010:WorkflowViewState.IdRef="NForEachUiElement_3" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="6dcb9550-edef-483e-ad0f-718a93438b71" Version="V3">
+                    <uix:NForEachUiElement DisplayName="For Each UI Element" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='CurrentElement'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='button' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="954,746" sap2010:WorkflowViewState.IdRef="NForEachUiElement_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="6dcb9550-edef-483e-ad0f-718a93438b71" Version="V3">
                       <uix:NForEachUiElement.Body>
                         <ActivityAction x:TypeArguments="x:Int32">
                           <ActivityAction.Argument>
                             <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
                           </ActivityAction.Argument>
-                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,1149.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,445.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_5">
                             <Sequence.Variables>
                               <Variable x:TypeArguments="x:String" Name="Role" />
                               <Variable x:TypeArguments="sd:DataTable" Name="dt_SentConnections" />
@@ -327,7 +328,7 @@
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Connect'" sap:VirtualizedContainerService.HintSize="354,173.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_6" InUiElement="[CurrentElement]" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6dcb9550-edef-483e-ad0f-718a93438b71" Version="V3">
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Connect'" sap:VirtualizedContainerService.HintSize="354,173.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_4" InUiElement="[CurrentElement]" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6dcb9550-edef-483e-ad0f-718a93438b71" Version="V3">
                               <uix:NClick.Target>
                                 <uix:TargetAnchorable BrowserURL="https://www.linkedin.com/search/results/people/?keywords=Absa%20Bank%20Kenya%20Top%20Management&amp;origin=SWITCH_SEARCH_VERTICAL&amp;sid=xBD" CvElementArea="1134, 959, 145, 55" CvTextArea="1161, 976, 91, 21" CvTextArgument="Connect" CvType="Button" DesignTimeRectangle="1117, 862, 131, 50" DesignTimeScaleFactor="1.5" ElementType="Button" FullSelectorArgument="&lt;webctrl id='ember759' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ember759' tag='BUTTON' type='button' class='artdeco-button artdeco-button--2 artdeco-button--secondary ember-view' aaname='      Connect ' check:innerText='Connect' /&gt;" Guid="70f95393-7ba1-42e4-a7e7-bb3672168531" ImageBase64="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" InformativeScreenshot="a05c4b382efcf3a1f791ed6ab9359558.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='&amp;quot;Absa Bank Kenya Top Management&amp;quot; | Search | LinkedIn' /&gt;" SearchSteps="Selector, Image, CV" Version="V3" Visibility="Interactive">
                                   <uix:TargetAnchorable.Anchors>
@@ -338,72 +339,30 @@
                                 </uix:TargetAnchorable>
                               </uix:NClick.Target>
                             </uix:NClick>
-                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Add a note'" sap:VirtualizedContainerService.HintSize="354,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6dcb9550-edef-483e-ad0f-718a93438b71" Version="V3">
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Send'" sap:VirtualizedContainerService.HintSize="354,184.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_5" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6dcb9550-edef-483e-ad0f-718a93438b71" Version="V3">
                               <uix:NClick.Target>
-                                <uix:TargetAnchorable BrowserURL="https://www.linkedin.com/search/results/people/?keywords=Bank%20of%20Africa%20Head&amp;origin=SWITCH_SEARCH_VERTICAL&amp;sid=OG(" CVScreenId="4304176c-f572-470e-90e9-e528cfa7e6b4" CvElementArea="898, 517, 158, 51" CvTextArea="921, 531, 110, 21" CvTextArgument="Add a note" CvType="Button" DesignTimeRectangle="902, 520, 151, 44" DesignTimeScaleFactor="1.3499999046325684" ElementType="Button" FullSelectorArgument="&lt;webctrl id='ember188' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ember188' tag='BUTTON' type='' class='artdeco-button artdeco-button--muted artdeco-button--2 artdeco-button--secondary ember-view mr1' aaname='      Add a note ' check:innerText='Add a note' /&gt;" Guid="354a9036-d017-4f91-9d09-ea0dfa583f3b" InformativeScreenshot="1c90c3f4df0ddb96d9f78f2894b7c872.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='(14) &amp;quot;Bank of Africa Head&amp;quot; | Search | LinkedIn' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                <uix:TargetAnchorable BrowserURL="https://www.linkedin.com/search/results/people/?keywords=NCBA%20Bank%20Head&amp;origin=SWITCH_SEARCH_VERTICAL&amp;sid=KPo" CvElementArea="1215, 518, 97, 49" CvTextArea="1237, 531, 52, 21" CvTextArgument="Send" CvType="Button" DesignTimeRectangle="1219, 520, 92, 44" DesignTimeScaleFactor="1.3499999046325684" ElementType="Button" FullSelectorArgument="&lt;webctrl id='ember949' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ember949' tag='BUTTON' type='' class='artdeco-button artdeco-button--2 artdeco-button--primary ember-view ml1' aaname='      Send ' check:innerText='Send' /&gt;" Guid="b46a27ac-c245-4f50-a1e0-a11630ae6b11" InformativeScreenshot="924aeb5a715efec3bfda0d9981cabe96.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='(14) Search | LinkedIn' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
                                   <uix:TargetAnchorable.Anchors>
-                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
-                                      <uix:Target CVScreenId="4304176c-f572-470e-90e9-e528cfa7e6b4" CvElementArea="898, 517, 158, 51" CvTextArea="921, 531, 110, 21" CvTextArgument="Add a note" CvType="Button" DesignTimeRectangle="923, 528, 109, 27" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='ember188' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='ember188' tag='SPAN' type='' class='artdeco-button__text' aaname='     Add a note ' check:innerText='Add a note' /&gt;" Guid="f6849fa2-29bd-4553-8032-c052b0b43320" SearchSteps="FuzzySelector, CV" />
-                                    </scg:List>
-                                  </uix:TargetAnchorable.Anchors>
-                                </uix:TargetAnchorable>
-                              </uix:NClick.Target>
-                              <uix:NClick.VerifyOptions>
-                                <uix:VerifyExecutionOptions DisplayName="Button 'Add a note'" Mode="Appears">
-                                  <uix:VerifyExecutionOptions.Retry>
-                                    <InArgument x:TypeArguments="x:Boolean" />
-                                  </uix:VerifyExecutionOptions.Retry>
-                                  <uix:VerifyExecutionOptions.Target>
-                                    <uix:TargetAnchorable BrowserURL="https://www.linkedin.com/search/results/people/?keywords=Bank%20of%20Africa%20Head&amp;origin=SWITCH_SEARCH_VERTICAL&amp;sid=OG(" CVScreenId="c7273c8f-ee0d-4478-b6b8-6c33cfc348fb" CvElementArea="898, 517, 158, 51" CvTextArea="921, 531, 110, 21" CvTextArgument="Add a note" CvType="Button" DesignTimeRectangle="902, 520, 151, 44" DesignTimeScaleFactor="1.3499999046325684" ElementType="Button" FullSelectorArgument="&lt;webctrl id='ember188' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ember188' tag='BUTTON' type='' class='artdeco-button artdeco-button--muted artdeco-button--2 artdeco-button--secondary ember-view mr1' aaname='      Add a note ' check:innerText='Add a note' /&gt;" Guid="6401b3b9-390a-42f2-9bc7-32c9d2bd9abb" InformativeScreenshot="171cc5a2dd862226940d40b3335c099c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='(14) &amp;quot;Bank of Africa Head&amp;quot; | Search | LinkedIn' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
-                                      <uix:TargetAnchorable.Anchors>
-                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
-                                          <uix:Target CVScreenId="c7273c8f-ee0d-4478-b6b8-6c33cfc348fb" CvElementArea="898, 517, 158, 51" CvTextArea="921, 531, 110, 21" CvTextArgument="Add a note" CvType="Button" DesignTimeRectangle="923, 528, 109, 27" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='ember188' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='ember188' tag='SPAN' type='' class='artdeco-button__text' aaname='     Add a note ' check:innerText='Add a note' /&gt;" Guid="b84f44f2-a0ca-494d-913b-bdb9d92b69dd" SearchSteps="FuzzySelector, CV" />
-                                        </scg:List>
-                                      </uix:TargetAnchorable.Anchors>
-                                    </uix:TargetAnchorable>
-                                  </uix:VerifyExecutionOptions.Target>
-                                  <uix:VerifyExecutionOptions.Timeout>
-                                    <InArgument x:TypeArguments="x:Double" />
-                                  </uix:VerifyExecutionOptions.Timeout>
-                                </uix:VerifyExecutionOptions>
-                              </uix:NClick.VerifyOptions>
-                            </uix:NClick>
-                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'TEXTAREA custom-message'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,292.6666666666667" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="6dcb9550-edef-483e-ad0f-718a93438b71" Text="Hello, great connecting with you." Version="V3">
-                              <uix:NTypeInto.Target>
-                                <uix:TargetAnchorable BrowserURL="https://www.linkedin.com/search/results/people/?keywords=Bank%20of%20Africa%20Head&amp;origin=SWITCH_SEARCH_VERTICAL&amp;sid=OG(" CVScreenId="e5d014b5-879c-4503-afde-72e55d0d3bcb" CvElementArea="632, 481, 677, 111" CvType="InputBox" DesignTimeRectangle="631, 483, 680, 108" DesignTimeScaleFactor="1.3499999046325684" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='custom-message' tag='TEXTAREA' /&gt;" FuzzySelectorArgument="&lt;webctrl id='custom-message' tag='TEXTAREA' type='' class='ember-text-area ember-view connect-button-send-invite__custom-message mb3' placeholder='Ex: We know each other from…' aaname='                 Please limit personal note to 300 characters.               ' /&gt;" Guid="1e5d7743-904a-43a1-a279-39a6cec4f83d" InformativeScreenshot="87c967fc75f2873adf03fc909b33bd1a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='(14) &amp;quot;Bank of Africa Head&amp;quot; | Search | LinkedIn' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
-                              </uix:NTypeInto.Target>
-                              <uix:NTypeInto.VerifyOptions>
-                                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
-                                  <uix:VerifyExecutionTypeIntoOptions.Retry>
-                                    <InArgument x:TypeArguments="x:Boolean" />
-                                  </uix:VerifyExecutionTypeIntoOptions.Retry>
-                                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
-                                    <InArgument x:TypeArguments="x:Double" />
-                                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
-                                </uix:VerifyExecutionTypeIntoOptions>
-                              </uix:NTypeInto.VerifyOptions>
-                            </uix:NTypeInto>
-                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Send'" sap:VirtualizedContainerService.HintSize="354,191.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_7" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6dcb9550-edef-483e-ad0f-718a93438b71" Version="V3">
-                              <uix:NClick.Target>
-                                <uix:TargetAnchorable BrowserURL="https://www.linkedin.com/search/results/people/?keywords=NCBA%20Bank%20Head&amp;origin=SWITCH_SEARCH_VERTICAL&amp;sid=KPo" CvElementArea="1215, 518, 97, 49" CvTextArea="1237, 531, 52, 21" CvTextArgument="Send" CvType="Button" DesignTimeRectangle="1219, 761, 92, 43" DesignTimeScaleFactor="1.3499999046325684" ElementType="Button" FullSelectorArgument="&lt;webctrl id='ember949' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ember949' tag='BUTTON' type='' class='artdeco-button artdeco-button--2 artdeco-button--primary ember-view ml1' aaname='      Send ' check:innerText='Send' /&gt;" Guid="b46a27ac-c245-4f50-a1e0-a11630ae6b11" InformativeScreenshot="9fdc7819f757ac7134e7fe4d441ed97b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='(14) Search | LinkedIn' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
-                                  <uix:TargetAnchorable.Anchors>
-                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
-                                      <uix:Target CvElementArea="1215, 518, 97, 49" CvTextArea="1237, 531, 52, 21" CvTextArgument="Send" CvType="Button" DesignTimeRectangle="1241, 769, 49, 27" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='ember949' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='ember949' tag='SPAN' type='' class='artdeco-button__text' aaname='     Send ' check:innerText='Send' /&gt;" Guid="113f25d7-75ab-450e-a88e-3946bc7d06d9" SearchSteps="FuzzySelector, CV" />
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target CvElementArea="1215, 518, 97, 49" CvTextArea="1237, 531, 52, 21" CvTextArgument="Send" CvType="Button" DesignTimeRectangle="1241, 528, 49, 27" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='ember949' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='ember949' tag='SPAN' type='' class='artdeco-button__text' aaname='     Send ' check:innerText='Send' /&gt;" Guid="113f25d7-75ab-450e-a88e-3946bc7d06d9" SearchSteps="FuzzySelector, CV" />
                                     </scg:List>
                                   </uix:TargetAnchorable.Anchors>
                                 </uix:TargetAnchorable>
                               </uix:NClick.Target>
                             </uix:NClick>
-                            <ui:WriteRange StartingCell="{x:Null}" AddHeaders="False" sap2010:Annotation.AnnotationText="Writes DataTable to excel." DataTable="[dt_SentConnections]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="354,172" sap2010:WorkflowViewState.IdRef="WriteRange_2" SheetName="Audience" WorkbookPath="SentConnections.xlsx">
-                              <sap:WorkflowViewStateService.ViewState>
-                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                                </scg:Dictionary>
-                              </sap:WorkflowViewStateService.ViewState>
-                            </ui:WriteRange>
                           </Sequence>
                         </ActivityAction>
                       </uix:NForEachUiElement.Body>
+                      <uix:NForEachUiElement.Filter>
+                        <uuam:FilterArgument LogicalOperator="And">
+                          <uuam:FilterArgument.Filters>
+                            <scg:List x:TypeArguments="uuam:FilterEntryArgument" Capacity="2">
+                              <uuam:FilterEntryArgument Criterion="Column0" Operator="Contains" Value="Connect" />
+                              <uuam:FilterEntryArgument Criterion="Column0" Operator="Contains" Value="Message" />
+                            </scg:List>
+                          </uuam:FilterArgument.Filters>
+                        </uuam:FilterArgument>
+                      </uix:NForEachUiElement.Filter>
                       <uix:NForEachUiElement.NextLink>
                         <uix:TargetAnchorable BrowserURL="https://www.linkedin.com/search/results/people/?keywords=Absa%20Bank%20Kenya%20Head&amp;origin=SWITCH_SEARCH_VERTICAL&amp;sid=%2Cb7" CvElementArea="1240, 627, 26, 32" CvTextArea="1194, 634, 43, 18" CvTextArgument="Next" CvType="ArrowButton" DesignTimeRectangle="1185, 623, 87, 43" DesignTimeScaleFactor="1.3499999046325684" ElementType="Button" FullSelectorArgument="&lt;webctrl id='ember730' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ember730' tag='BUTTON' type='button' class='artdeco-pagination__button artdeco-pagination__button--next artdeco-button artdeco-button--muted artdeco-button--icon-right artdeco-button--1 artdeco-button--tertiary ember-view' aaname='                           Next ' check:innerText='Next' /&gt;" Guid="b3febec7-a42a-491f-9d0f-e1cde444b17f" ScopeSelectorArgument="&lt;html app='chrome.exe' title='(5) &amp;quot;Absa Bank Kenya Head&amp;quot; | Search | LinkedIn' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
                           <uix:TargetAnchorable.Anchors>
@@ -435,6 +394,13 @@
                         </scg:List>
                       </uix:NForEachUiElement.VariablesMetadata>
                     </uix:NForEachUiElement>
+                    <ui:WriteRange StartingCell="{x:Null}" AddHeaders="False" sap2010:Annotation.AnnotationText="Writes DataTable to excel." DataTable="[dt_SentConnections]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="954,169.33333333333334" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Audience" WorkbookPath="SentConnections.xlsx">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:WriteRange>
                   </Sequence>
                 </ActivityAction>
               </ui:ForEachRow.Body>
